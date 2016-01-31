@@ -130,7 +130,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: rgba(0,0,0,0.04);
 }
 
 code {
@@ -145,6 +145,7 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        background-color: rgba(0,0,0,0);
     }
 }
 
