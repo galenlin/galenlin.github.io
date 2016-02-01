@@ -7,13 +7,13 @@ categories: jekyll update
 
 ## Getting Started
 
-Use `kramdown` as markdown processor in `_config.xml`.
+Use `redcarpet` as markdown processor in `_config.xml`.
 
 ```ruby
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "fenced_code_blocks", "with_toc_data"]
 ```
 
 Add `markdown-body` style for `posts` content.
@@ -24,16 +24,26 @@ Add `markdown-body` style for `posts` content.
 </article>
 ```
 
-Add [github-markdown.css](https://github.com/sindresorhus/github-markdown-css) to html header.
+Add [github-markdown.css](https://github.com/sindresorhus/github-markdown-css) to html header or use sass.
+
+```css
+@import
+        "base",
+        "layout",
+        "github-markdown",
+        "syntax-highlighting"
+;
+```
 
 
 ## Tests
 
 ### Table
 
-A | B
---|---
-a | b
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 ### Task List (Unsupport now)
 
