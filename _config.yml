@@ -14,18 +14,5 @@ highlighter: pygments
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "fenced_code_blocks", "with_toc_data"]
 
-# markdown: kramdown
-# highlighter: pygments
-# kramdown:
-#   input: GFM
-#   auto_ids: true
-
+locale: en
 exclude: ["zh-CN"]
-
-default:
-  -
-    scope:
-      path: "/"
-      type: "posts"
-    values:
-      categories: en

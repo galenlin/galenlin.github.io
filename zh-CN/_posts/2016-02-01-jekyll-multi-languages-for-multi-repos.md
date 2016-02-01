@@ -2,7 +2,8 @@
 layout: post
 title:  "Gitcafe中文博客镜像"
 date:   2016-02-01 14:03:03
-categories: jekyll
+categories: web
+tags: [jekyll, github, gitcafe]
 ---
 
 开始准备在git上用Jekyll写博客时，有两件纠结的事情你可能会碰到：

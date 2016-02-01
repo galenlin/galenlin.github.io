@@ -2,7 +2,8 @@
 layout: post
 title:  "Jekyll Github Flavored Markdown"
 date:   2016-01-29 15:36:03
-categories: jekyll github markdown
+categories: web
+tags: [jekyll, github, markdown]
 ---
 
 ## Getting Started

@@ -2,7 +2,8 @@
 layout: post
 title:  "Jekyll仿Github风格"
 date:   2016-01-29 15:36:03
-categories: jekyll github markdown
+categories: web
+tags: [jekyll, github, markdown]
 ---
 
 ## 配置

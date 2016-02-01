@@ -2,7 +2,8 @@
 layout: post
 title:  "Android Studio 调试 Gradle"
 date:   2016-01-29 16:36:03
-categories: gradle
+categories: android
+tags: [android, gradle]
 ---
 
 1. 创建调试器

@@ -4,10 +4,19 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
+  {% for category in site.categories %}
+  {% assign catname = category | first | lowercase %}
+  {% if catname == 'ios' %}
+    {% assign capcatname = 'iOS' %}
+  {% else %}
+    {% assign capcatname = catname | capitalize %}
+  {% endif %}
+  {% if catname != site.locale %}
+  <div class="markdown-body">
+  <h2>{{ capcatname }} </span>({{ category | last | size }})</span></h2>
+  </div>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in category.last %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -17,6 +26,8 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  {% endif %}
+  {% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
