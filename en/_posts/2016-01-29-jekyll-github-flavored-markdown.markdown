@@ -39,10 +39,13 @@ Modify the [_syntax-highlighting.sass][gfm-hl] to adjust code colors as github.
 
 ### Hover anchor and Task list
 
-Add [gfm-hack.js][gfm-hack] to your jekyll `default.html` to enable `<h2>` ~ `<h6>` hover anchor and `- [ ]` or `- [x]` task list in github.
+Add [gfm-hack.js][gfm-hack] to html `<head>` to enable `<h2>` ~ `<h6>` hover anchor and `- [ ]` or `- [x]` task list in github.
 
 ```html
+<head>
+...
 <script type="text/javascript" src="/js/gfm-hack.js"/>
+</head>
 ```
 
 ## Tests

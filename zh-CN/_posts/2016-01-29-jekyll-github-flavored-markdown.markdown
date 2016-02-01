@@ -39,10 +39,13 @@ redcarpet:
 
 ### 段落锚点链接与任务列表
 
-在你的jekyll的`_layouts/default.html`中加入[gfm-hack.js][gfm-hack]，使`<h2>`到`<h6>`之间的标签支持鼠标悬停时显示锚点链接，以及支持通过`- [ ]`或`- [x]`来显示任务列表。
+在网页的`<head>`标签中加入[gfm-hack.js][gfm-hack]，使`<h2>`到`<h6>`之间的标签支持鼠标悬停时显示锚点链接，以及支持通过`- [ ]`或`- [x]`来显示任务列表。
 
 ```html
+<head>
+...
 <script type="text/javascript" src="/js/gfm-hack.js"/>
+</head>
 ```
 
 ## 测试用例
