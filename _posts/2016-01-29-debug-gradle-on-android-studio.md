@@ -6,10 +6,13 @@ categories: gradle
 ---
 
 1. Create debugger
+
     Run->Edit Configurations
     ![Edit configurations](/images/debug-gradle-1.png)
+
     Add New Configuration
     ![Add New Configuration](/images/debug-gradle-2.png)
+    
     Add Remote configuration
     ![Add Remote configuration](/images/debug-gradle-3.png)
 
