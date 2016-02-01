@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Jekyll Github Flavored Markdown"
+title:  "Jekyll仿Github风格"
 date:   2016-01-29 15:36:03
 categories: jekyll github markdown
 ---
 
-## Getting Started
+## 配置
 
-Use `redcarpet` as markdown processor in `_config.xml`.
+在`_config.xml`中使用`redcarpet`作为markdown解析器。
 
 ```ruby
 markdown: redcarpet
@@ -16,7 +16,7 @@ redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "fenced_code_blocks", "with_toc_data"]
 ```
 
-Add `markdown-body` id and class for `posts` content.
+对`posts`博客内容所包含的标签加上`markdown-body` id 与 class。
 
 ```html
 <article id="markdown-body" class="post-content markdown-body">
@@ -24,7 +24,7 @@ Add `markdown-body` id and class for `posts` content.
 </article>
 ```
 
-Add [github-markdown.css][gfm-css] to html header or save it as [_github-markdown.scss][gfm-scss] and import it in your `main.css`.
+在html的header里加入[github-markdown.css][gfm-css]，或者如本网站使用[_github-markdown.scss][gfm-scss]并在`main.css`中导入。
 
 ```css
 @import
@@ -35,15 +35,19 @@ Add [github-markdown.css][gfm-css] to html header or save it as [_github-markdow
 ;
 ```
 
-Modify the [_syntax-highlighting.sass][gfm-hl] to adjust code colors as github.
+修改[_syntax-highlighting.sass][gfm-hl]来仿照github上的代码着色。
 
-### Hover anchor and Task list
+### 段落锚点链接与任务列表
 
-Add [gfm-hack.js][gfm-al] to your jekyll `_includes` to enable `<h2>` ~ `<h6>` hover anchor and `- [ ]` or `- [x]` task list in github.
+在你的jekyll的`_layouts/default.html`中加入[gfm-hack.js][gfm-hack]，使`<h2>`到`<h6>`之间的标签支持鼠标悬停时显示锚点链接，以及支持通过`- [ ]`或`- [x]`来显示任务列表。
 
-## Tests
+```html
+<script type="text/javascript" src="/js/gfm-hack.js"/>
+```
 
-### Table
+## 测试用例
+
+### 表格
 
 ```
 | First Header  | Second Header |
@@ -57,7 +61,7 @@ Add [gfm-hack.js][gfm-al] to your jekyll `_includes` to enable `<h2>` ~ `<h6>` h
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-### Task List
+### 任务列表
 
 ```
 - [ ] a task list item
@@ -73,7 +77,7 @@ Add [gfm-hack.js][gfm-al] to your jekyll `_includes` to enable `<h2>` ~ `<h6>` h
 - [ ] incomplete
 - [x] completed
 
-### Highlighting
+### 代码高亮
 
 <pre>
 ```java
@@ -101,15 +105,15 @@ class GreetGFM {
 }
 ```
 
-## Reference
+## 参考文章
 
 * https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html
 
-## Source
+## 源代码
 
-All the sources are on [galenlin.github.io](https://github.com/galenlin/galenlin.github.io).
+所有的代码见[这里](https://github.com/galenlin/galenlin.github.io)。
 
 [gfm-css]: https://github.com/sindresorhus/github-markdown-css
 [gfm-scss]: https://github.com/galenlin/galenlin.github.io/blob/master/_sass/_github-markdown.scss
 [gfm-hl]: https://github.com/galenlin/galenlin.github.io/blob/master/_sass/_syntax-highlighting.scss
-[gfm-al]: https://github.com/galenlin/galenlin.github.io/blob/master/_includes/anchor_links.html
+[gfm-hack]: https://github.com/galenlin/galenlin.github.io/blob/master/js/gfm-hack.js

@@ -19,3 +19,13 @@ redcarpet:
 # kramdown:
 #   input: GFM
 #   auto_ids: true
+
+exclude: ["zh-CN"]
+
+default:
+  -
+    scope:
+      path: "/"
+      type: "posts"
+    values:
+      categories: en
