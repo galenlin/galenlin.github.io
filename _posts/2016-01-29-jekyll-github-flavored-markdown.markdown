@@ -101,6 +101,10 @@ class GreetGFM {
 }
 ```
 
+## Source
+
+All the sources are on [galenlin.github.io](https://github.com/galenlin/galenlin.github.io).
+
 [gfm-css]: https://github.com/sindresorhus/github-markdown-css
 [gfm-scss]: https://github.com/galenlin/galenlin.github.io/blob/master/_sass/_github-markdown.scss
 [gfm-hl]: https://github.com/galenlin/galenlin.github.io/blob/master/_sass/_syntax-highlighting.scss
