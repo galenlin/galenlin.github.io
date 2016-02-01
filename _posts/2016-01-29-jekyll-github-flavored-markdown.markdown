@@ -101,6 +101,10 @@ class GreetGFM {
 }
 ```
 
+## Reference
+
+* https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html
+
 ## Source
 
 All the sources are on [galenlin.github.io](https://github.com/galenlin/galenlin.github.io).
