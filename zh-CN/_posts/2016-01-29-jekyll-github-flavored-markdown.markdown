@@ -48,7 +48,7 @@ redcarpet:
 </head>
 ```
 
-## 测试用例
+## 测试
 
 ### 表格
 
@@ -114,7 +114,7 @@ class GreetGFM {
 
 ## 源代码
 
-所有的代码见[这里](https://github.com/galenlin/galenlin.github.io)。
+所有的代码都可以在[这里](https://github.com/galenlin/galenlin.github.io)找到。
 
 [gfm-css]: https://github.com/sindresorhus/github-markdown-css
 [gfm-scss]: https://github.com/galenlin/galenlin.github.io/blob/master/_sass/_github-markdown.scss
