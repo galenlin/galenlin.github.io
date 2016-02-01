@@ -14,8 +14,8 @@ var listTasks = function (containingElement) {
     var ul = uls[i];
     var lis = ul.getElementsByTagName("li");
     var isTask = false;
-    for (var j = 0; i < lis.length; i++) {
-      var li = lis[i];
+    for (var j = 0; j < lis.length; j++) {
+      var li = lis[j];
       var s = li.innerHTML;
       var k = s.substring(0, 3);
       if (k == '[ ]') {
