@@ -18,7 +18,7 @@ tags: [jekyll, github, gitcafe]
 
 那么，在github上用英文，在gitcafe上用中文，可不可以呢？
 
-答案是肯定的。
+答案是肯定的。让我们开始吧！
 
 ## 目录结构
 
@@ -60,7 +60,7 @@ exclude: ["en"]
 
 ## 镜像gitcafe
 
-在clone的`yourname.github.io`目录下，调用命令：
+在github目录下，调用命令：
 
 ```
 $ jekyll build --config _config.yml,_config.zh-CN.yml -d [你的gitcafe的clone目录]
