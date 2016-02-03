@@ -1,3 +1,6 @@
+# Dependencies
+gems: [jemoji]
+
 # Site settings
 title: GalenLin's Blog
 email: oolgloo.2012@gmail.com

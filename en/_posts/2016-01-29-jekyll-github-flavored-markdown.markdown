@@ -49,6 +49,10 @@ Add [gfm-hack.js][gfm-hack] to html `<head>` to enable `<h2>` ~ `<h6>` hover anc
 </head>
 ```
 
+### Emoji
+
+:+1:
+
 ## Tests
 
 ### Table
