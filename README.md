@@ -5,6 +5,7 @@
   - [x] Code Highlighting
   - [x] Hover Anchor
   - [x] Task List
+  - [x] Emoji
 * Support multi-language for multi-repo
 
 ## Links
