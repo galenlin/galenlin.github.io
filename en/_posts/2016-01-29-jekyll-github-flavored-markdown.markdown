@@ -51,7 +51,17 @@ Add [gfm-hack.js][gfm-hack] to html `<head>` to enable `<h2>` ~ `<h6>` hover anc
 
 ### Emoji
 
-:+1:
+Add the install script in `Gemfile`, if not exists the file then create one.
+
+```ruby
+gem 'jemojy'
+```
+
+Add the dependency in `_config.yml`.
+
+```ruby
+gems: [jemoji]
+```
 
 ## Tests
 
@@ -113,9 +123,19 @@ class GreetGFM {
 }
 ```
 
+### Emoji
+
+```
+I give this ariticle 32 :+1:!
+```
+
+I give this ariticle 32 :+1:!
+
 ## Reference
 
-* https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html
+* [Redcarpet extensions](https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html)
+* [Github flavored emoji](https://github.com/jekyll/jemoji)
+* [Emoji cheat sheet](http://www.emoji-cheat-sheet.com)
 
 ## Source
 

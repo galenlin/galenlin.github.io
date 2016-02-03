@@ -49,6 +49,22 @@ redcarpet:
 </head>
 ```
 
+### Emoji表情
+
+在`Gemfile`中增加安装脚本。（如果没有这个文件在根目录创建一个）
+
+```ruby
+gem 'jemojy'
+```
+
+在`_config.yml`中添加依赖。
+
+```ruby
+gems: [jemoji]
+```
+
+> 本地调试时，需要先安装：sudo gem install jemojy
+
 ## 测试
 
 ### 表格
@@ -109,9 +125,19 @@ class GreetGFM {
 }
 ```
 
+### Emoji
+
+```
+这篇文章我给32个:+1:!
+```
+
+这篇文章我给32个:+1:!
+
 ## 参考文章
 
-* https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html
+* [Redcarpet extensions](https://george-hawkins.github.io/basic-gfm-jekyll/redcarpet-extensions.html)
+* [Github flavored emoji](https://github.com/jekyll/jemoji)
+* [Emoji cheat sheet](http://www.emoji-cheat-sheet.com)
 
 ## 源代码
 
