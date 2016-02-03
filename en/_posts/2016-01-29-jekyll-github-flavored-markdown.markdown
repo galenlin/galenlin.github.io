@@ -126,7 +126,7 @@ class GreetGFM {
 ### Emoji
 
 ```
-I give this ariticle 32 :+1:!
+I give this ariticle 32 ：+1：! (the colon here should be half-width)
 ```
 
 I give this ariticle 32 :+1:!
