@@ -60,7 +60,7 @@ gem 'jemoji'
 Add the dependency in `_config.yml`.
 
 ```ruby
-gems: [jemoji]
+plugins: [jemoji]
 ```
 
 ## Tests
