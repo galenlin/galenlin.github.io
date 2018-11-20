@@ -45,7 +45,7 @@ Add [gfm-hack.js][gfm-hack] to html `<head>` to enable `<h2>` ~ `<h6>` hover anc
 ```html
 <head>
 ...
-<script type="text/javascript" src="/js/gfm-hack.js"/>
+<script type="text/javascript" src="/js/gfm-hack.js"></script>
 </head>
 ```
 
@@ -54,13 +54,13 @@ Add [gfm-hack.js][gfm-hack] to html `<head>` to enable `<h2>` ~ `<h6>` hover anc
 Add the install script in `Gemfile`, if not exists the file then create one.
 
 ```ruby
-gem 'jemojy'
+gem 'jemoji'
 ```
 
 Add the dependency in `_config.yml`.
 
 ```ruby
-gems: [jemoji]
+plugins: [jemoji]
 ```
 
 ## Tests
